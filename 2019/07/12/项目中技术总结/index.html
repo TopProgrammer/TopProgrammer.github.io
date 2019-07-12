@@ -1,0 +1,165 @@
+<!DOCTYPE html><html><head><meta name="generator" content="Hexo 3.9.0"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="有志者事竟成,破釜沉舟,百二秦关终属楚; 苦心人天不负,卧薪尝胆,三千越甲可吞吴。"><title>项目中技术总结 | 长城</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=1.2.0"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/normalize/8.0.1/normalize.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//lib.baomitu.com/jquery/3.4.0/jquery.min.js"></script><link rel="icon" mask sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">项目中技术总结</h1><a id="logo" href="/.">长城</a><p class="description">有志者事竟成,破釜沉舟,百二秦关终属楚; 苦心人天不负,卧薪尝胆,三千越甲可吞吴。</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 大事件</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">项目中技术总结</h1><div class="post-meta">Jul 12, 2019</div><div class="post-content"><p>2018年8月31日离职后，对自己工作中用到的技术做了总结，备战新一轮面试。</p>
+<ol>
+<li><p>java基础</p>
+<ol>
+<li><a href="https://blog.csdn.net/baijunzhijiang_01/article/details/84317151" target="_blank" rel="noopener">java多线程（要求手写）</a></li>
+<li>java线程池（要求手写）</li>
+<li>java集合（源码级别）</li>
+<li>JAVA反射机制源码，泛型</li>
+<li>JAVA异常处理机制</li>
+<li>值传递引用传递</li>
+<li>基础类型以及占用长度</li>
+<li>lambda表达式问得不多</li>
+<li>JAVA三目运算符注意事项</li>
+<li>JAVA注解工作原理，以及生命周期</li>
+<li>java断言</li>
+</ol>
+</li>
+<li><p>java虚拟机</p>
+<ol>
+<li>java 内存模型</li>
+<li>java 类加载机制</li>
+<li>java 垃圾回收机制</li>
+</ol>
+</li>
+<li><p>java性能调优</p>
+</li>
+<li><p>设计模式</p>
+<ol>
+<li>六大原则</li>
+<li>23种设计模式</li>
+</ol>
+</li>
+<li><p>Spring 框架（源码）</p>
+<ol>
+<li>AOP（原理）</li>
+<li>IOC（生命周期，加载过程，原理）</li>
+<li>Spring Session</li>
+<li>Spring 异常处理机制</li>
+<li><a href="https://blog.csdn.net/baijunzhijiang_01/article/details/83925449" target="_blank" rel="noopener">Spring 事务(原理，传播机制，隔离级别)</a></li>
+</ol>
+</li>
+<li><p>SpringBoot框架</p>
+<ol>
+<li>启动流程</li>
+<li>SpringBoot的理解</li>
+</ol>
+</li>
+<li><p>SpringMVC</p>
+<ol>
+<li>生命周期</li>
+<li>加载流程</li>
+<li>分发机制</li>
+<li><a href="https://blog.csdn.net/Theflashdye/article/details/76735882" target="_blank" rel="noopener">跨域问题产生和解决</a><ol>
+<li>同一协议，同一ip，同一端口，三同中有一不同就产生了跨域。</li>
+<li>跨域问题是浏览器同源策略造成的，如果我们没有设置Header头三件套的话（’Access-Control-Allow-*’：）那么对一切跨域请求操作浏览器都是拒绝的。 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Access-Control-Allow-Origin:*</span><br><span class="line">Access-Control-Allow-Methods:POST</span><br><span class="line">Access-Control-Allow-Headers:x-requested-with,content-type</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>Struts2框架</p>
+</li>
+<li><p>Mybatis框架</p>
+<ol>
+<li>PageHelper物理分页原理</li>
+<li>Mybatis的传参为空时，报错如何解决？Mybatis字段为JSON格式，如何解析成一个对象？有一个字段，包括转义字符，无法直接入库，save和select都需要转换一下，如何解决？<ol>
+<li>自定义一个类，实现TypeHandler接口</li>
+<li>在resultMap中使用，即可配置age的默认值(上述代码中age的默认值为””)<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;resultMap id=&quot;list&quot; type=&quot;java.util.LinkedHashMap&quot;&gt;</span><br><span class="line">    &lt;result property=&quot;name&quot; column=&quot;name&quot; /&gt;</span><br><span class="line">    &lt;result property=&quot;sex&quot; column=&quot;sex&quot; /&gt;</span><br><span class="line">    &lt;result property=&quot;age&quot; column=&quot;age&quot; typeHandler=&quot;com.demo.EmptyStringIfNull&quot;/&gt;</span><br><span class="line">&lt;/resultMap&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>SpringDataJPA框架</p>
+</li>
+<li><p>Mysql数据库</p>
+<ol>
+<li>数据库引擎类型</li>
+<li>索引<ol>
+<li>索引类型 </li>
+<li>索引结构</li>
+<li>索引存储位置</li>
+<li>多列索引</li>
+<li>索引失效条件</li>
+<li>创建索引的原则</li>
+</ol>
+</li>
+<li>主从复制的机制</li>
+<li>数据库的三范式</li>
+<li>数据库的事务机制</li>
+<li>Sql执行顺序</li>
+<li>查询优化</li>
+<li>手写SQL</li>
+</ol>
+</li>
+<li><p><a href="https://blog.csdn.net/baijunzhijiang_01/article/details/84316646" target="_blank" rel="noopener">Memcached、Redis非关系型数据库</a></p>
+</li>
+<li><p><a href="http://dubbo.apache.org/zh-cn/docs/user/quick-start.html" target="_blank" rel="noopener">Dubbo服务治理框架</a></p>
+</li>
+<li><p><a href="http://www.cnblogs.com/lanqiu5ge/p/9405601.html#_label15" target="_blank" rel="noopener">Zookeeper 分布式协调服务</a></p>
+</li>
+<li><p>Maven项目构建管理</p>
+<ol>
+<li>一些常用的命令</li>
+</ol>
+</li>
+<li><p>消息队列Kafka</p>
+<ol>
+<li>kafka原理</li>
+<li>kafka的一些命令</li>
+<li>kafka的流程原理图</li>
+<li>kafka保证顺序执行</li>
+<li>kafka保证消息不丢失，会被消费</li>
+<li>kafka保证消息的可达</li>
+<li>kafka的acks=1</li>
+<li>kafka的offset<ol>
+<li>消息的起始位置</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>Linux命令</p>
+<ol>
+<li>常用的命令</li>
+<li>修改用户权限，awk，telnet等等其他常用命令</li>
+</ol>
+</li>
+<li><p>数据结构</p>
+<ol>
+<li>队列，栈的区别</li>
+<li>链表（如何判断一个链表为循环链表）</li>
+<li>二叉树的先序后序遍历</li>
+</ol>
+</li>
+<li><p>算法</p>
+<ol>
+<li>排序算法<ol>
+<li>冒泡排序（多次要求手写）</li>
+<li>快速排序，插入排序等（可选择写，加分）</li>
+</ol>
+</li>
+<li>查找算法<ol>
+<li>二分查找等（要求写）</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>网络协议</p>
+<ol>
+<li>分层模型，各层的职责，又如解析端口是在哪一层等。</li>
+<li><a href="https://blog.csdn.net/baijunzhijiang_01/article/details/84317625" target="_blank" rel="noopener">【Http协议：详解】</a></li>
+<li>三次握手和四次挥手</li>
+</ol>
+</li>
+</ol>
+<hr>
+<ol>
+<li>SpringSecrity 安全框架</li>
+<li>Quartz 作业调度框架</li>
+<li>Log4J 分布式文件系统</li>
+<li>Swagger2接口测试框架</li>
+<li>Jenkins持续集成框架</li>
+<li><a href="https://blog.csdn.net/baijunzhijiang_01/article/details/84316893" target="_blank" rel="noopener">Nginx问题</a></li>
+</ol>
+</div><div class="tags"></div><div class="post-nav"><a class="pre" href="/2019/07/12/线程的状态/">线程状态</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"><input type="hidden" name="sitesearch" value="http://www.changcheng.site"></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> Categorías</i></div></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> Etiquetas</i></div><div class="tagcloud"></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> Recientes</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/07/12/2018-md/">2018.md</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/07/12/2017/">2017</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/07/12/线程的状态/">线程状态</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/07/12/项目中技术总结/">项目中技术总结</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> Blogroll</i></div><ul></ul><a href="http://www.example1.com/" title="site-name1" target="_blank">site-name1</a><ul></ul><a href="http://www.example2.com/" title="site-name2" target="_blank">site-name2</a><ul></ul><a href="http://www.example3.com/" title="site-name3" target="_blank">site-name3</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2019 <a href="/." rel="nofollow">长城.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"></a><a rel="nofollow" target="_blank" href="http://www.beian.miit.gov.cn/"> 豫ICP备17023102号.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=1.2.0" async></script><script type="text/javascript" src="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=1.2.0" async></script><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=1.2.0"></script><script type="text/javascript" src="/js/smartresize.js?v=1.2.0"></script></div></body></html>
